@@ -1,81 +1,65 @@
-# Portfolio README
+# Harshal Kharabe — Portfolio
 
-## Project Overview
-This portfolio showcases a collection of projects that highlight my skills in web development, data science, and software engineering. 
-
-## Features
-- **Dark/Light Theme Toggle**: Enables users to switch between light and dark modes for personalized viewing.
-- **Scroll Animations**: Adds visible dynamic effects as users scroll through the page.
-- **Typing Effect**: Engages users with a dynamic typing effect on key sections.
-- **Contact Form**: Integrated with EmailJS for seamless contact functionality.
+Personal portfolio website built with vanilla HTML, CSS, and JavaScript. Minimal, dark, editorial design with a futuristic aesthetic.
 
 ## Sections
-### Hero
-An eye-catching introduction that encapsulates my professional brand.
 
-### About
-Details about my background, mission, and vision in software development.
+| Section | Description |
+|:---|:---|
+| **Hero** | Oversized typographic intro with name, tagline, and CTA buttons |
+| **About** | Background, philosophy, and core competencies |
+| **Skills** | Grouped typography layout — Backend, Databases, Data Science, APIs & Auth, DevOps & Tools |
+| **Projects** | Editorial list of featured work with tech tags and live/code links |
+| **Experience** | Timeline with role details — Datamatter Technologies, Sattrix Software Solutions |
+| **Contact** | Typographic CTA with email, LinkedIn, and GitHub links |
 
-### Skills
-Breakdown of my competencies in various domains:
-- **Languages**: Python, JavaScript, HTML, CSS
-- **Frameworks**: React, Flask, Django
-- **Data Science**: Pandas, NumPy, Scikit-Learn
-- **Databases**: PostgreSQL, MongoDB
-- **DevOps**: Docker, Git, CI/CD principles
+## Featured Projects
 
-### Projects
-A showcase of my major projects:
-- **TrendScout**: A web application for tracking trending topics across various platforms.
-- **Localense**: A location-based services application aimed at enhancing local engagement.
-- **File Migration System**: A tool designed to facilitate seamless migration of files between storage systems.
-- **SkillMatch AI**: An AI-driven application that recommends skills based on user interests.
+- **Trendscout** — Real-time social listening SaaS with sentiment analysis
+- **Localense** — AI-powered local travel discovery platform
+- **Automated File Migration System** — Enterprise file migration engine for Salesforce
 
-### Experience
-#### Backend Developer
-**Datamatter Technologies**  
-Details about my role, responsibilities, and projects contributed.
+## Tech Stack
 
-#### Python Developer
-**Datamatter Technologies**  
-Responsibilities and technologies used in projects.
-
-## Technologies Used
-- **Backend**: Flask, Django
-- **Frontend**: React, Bootstrap
-- **Tools**: Git, Docker, Visual Studio Code
+- **Languages**: HTML, CSS, JavaScript
+- **Fonts**: Inter, JetBrains Mono (Google Fonts)
+- **Icons**: Font Awesome 6
+- **Contact**: EmailJS integration
+- **Deployment**: Vercel
 
 ## File Structure
+
 ```
 Portfolio/
-│
 ├── assets/
-│   ├── images/
-│   └── styles/
-│
-├── components/
-│   └── (React components)
-│
-├── pages/
-│   └── (React pages)
-│
-├── App.js
-├── index.js
-├── README.md
-└── package.json
+│   ├── profile.png
+│   └── resume.pdf
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
 ```
 
-## Project Data
-Description of datasets used in projects and their structure.
+## Setup
 
-## Setup Instructions
-1. Clone the repository.
-2. Run `npm install` to install dependencies.
-3. Start the application using `npm start`.
+1. Clone the repository
+2. Open `index.html` in a browser — no build step required
 
-## Deployment Info
-- Deployed on [Vercel](https://vercel.com) for fast and reliable performance.
+```bash
+git clone https://github.com/hkcoder18/Portfolio.git
+cd Portfolio
+# Open index.html in your browser
+```
+
+## Design
+
+- Deep navy-black background (`#05060F`)
+- Cyan accent (`#00d4ff`) used sparingly
+- Sharp corners, thin borders, monospace labels
+- Oversized uppercase typography for headings
+- Fade-in scroll animations with `prefers-reduced-motion` support
+- Fully responsive (desktop, tablet, mobile)
 
 ---
 
-For more details about each project, feel free to explore the individual sections of this portfolio!
+© 2026 Harshal Kharabe
