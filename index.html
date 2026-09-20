@@ -24,8 +24,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
 
-    <!-- Devicon & Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- EmailJS SDK -->
@@ -37,8 +36,9 @@
     <!-- Navigation -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo"><span class="logo-bracket">&lt;</span>HK<span
-                    class="logo-bracket">/&gt;</span></a>
+            <a href="#" class="nav__logo">
+                <span class="logo-accent">HK</span> — HARSHAL KHARABE
+            </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -48,14 +48,12 @@
                     <li><a href="#projects" class="nav__link">Projects</a></li>
                     <li><a href="#experience" class="nav__link">Experience</a></li>
                     <li><a href="#contact" class="nav__link">Contact</a></li>
+                    <li><a href="assets/resume.pdf" class="nav__link nav__link--resume" target="_blank">Resume</a></li>
                 </ul>
                 <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
             </div>
 
             <div class="nav__actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"><i
-                        class="fas fa-moon"></i></button>
-                <a href="#contact" class="btn btn--primary nav__cta">Let's Talk</a>
                 <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
             </div>
         </nav>
@@ -65,83 +63,38 @@
         <!-- Hero Section -->
         <section class="hero section" id="home">
             <div class="hero__container container">
+                <div class="hero__line"></div>
                 <div class="hero__content">
-                    <div class="hero__badge"><span class="status-dot"></span>Available for opportunities</div>
-                    <h1 class="hero__title">Hi, I'm <span class="highlight">Harshal Kharabe</span></h1>
-                    <h2 class="hero__subtitle"><span class="typing-text" id="typing-text"></span><span
-                            class="cursor">|</span></h2>
-                    <p class="hero__description">Crafting robust backend systems and data-driven solutions with
-                        Python.<br>Turning complex problems into elegant, scalable architectures.</p>
-
+                    <div class="hero__eyebrow">Architecting Backends · Building Real Systems</div>
+                    <h1 class="hero__name">
+                        <span class="name-line">Harshal</span>
+                        <span class="name-line">Kharabe</span>
+                    </h1>
+                    <p class="hero__tagline">Backend developer specializing in Python, FastAPI, Django, and data-driven
+                        systems. I build production-ready architectures with clean code and security-focused design.</p>
                     <div class="hero__actions">
-                        <a href="#projects" class="btn btn--primary"><i class="fas fa-folder-open"></i>View Projects</a>
-                        <a href="#contact" class="btn btn--outline"><i class="fas fa-paper-plane"></i>Get in Touch</a>
-                    </div>
-
-                    <div class="hero__stats">
-                        <div class="stat"><span class="stat__number" data-count="2">0</span><span
-                                class="stat__plus">+</span><span class="stat__label">Years Experience</span></div>
-                        <div class="stat"><span class="stat__number" data-count="5">0</span><span
-                                class="stat__plus">+</span><span class="stat__label">Projects Completed</span></div>
-                        <div class="stat"><span class="stat__number" data-count="7">0</span><span
-                                class="stat__plus">+</span><span class="stat__label">Technologies</span></div>
+                        <a href="#projects" class="btn btn--primary">View Work</a>
+                        <a href="assets/resume.pdf" class="btn btn--ghost" download><i class="fas fa-download"></i>
+                            Resume</a>
                     </div>
                 </div>
-
-                <div class="hero__image">
-                    <div class="hero__image-wrapper">
-                        <div class="hero__image-glow"></div>
-                        <div class="hero__avatar"><span class="avatar-text">HK</span></div>
-                        <div class="floating-icons">
-                            <div class="floating-icon floating-icon--1"><i class="devicon-python-plain"></i></div>
-                            <div class="floating-icon floating-icon--2"><i class="devicon-fastapi-plain"></i></div>
-                            <div class="floating-icon floating-icon--3"><i class="devicon-django-plain"></i></div>
-                            <div class="floating-icon floating-icon--4"><i class="devicon-postgresql-plain"></i></div>
-                        </div>
-                    </div>
-                </div>
+                <div class="hero__meta">Backend Developer · 2026</div>
             </div>
-            <div class="hero__scroll"><a href="#about" class="scroll-indicator"><span>Scroll Down</span><i
-                        class="fas fa-chevron-down"></i></a></div>
         </section>
 
         <!-- About Section -->
         <section class="about section" id="about">
             <div class="container">
-                <div class="section__header"><span class="section__subtitle">Get to know me</span>
-                    <h2 class="section__title">About Me</h2>
-                </div>
-
-                <div class="about__content">
-                    <div class="about__image">
-                        <div class="code-window">
-                            <div class="code-window__header">
-                                <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span
-                                    class="dot dot--green"></span>
-                                <span class="code-window__title">about_me.py</span>
-                            </div>
-                            <div class="code-window__body">
-                                <pre><code><span class="code-keyword">class</span> <span class="code-class">BackendDeveloper</span>:
-    <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-self">self</span>):
-        <span class="code-self">self</span>.name = <span class="code-string">"Harshal Kharabe"</span>
-        <span class="code-self">self</span>.role = <span class="code-string">"Backend Developer"</span>
-        <span class="code-self">self</span>.frameworks = [<span class="code-string">"FastAPI"</span>, <span class="code-string">"Django"</span>]
-        
-    <span class="code-keyword">def</span> <span class="code-function">say_hi</span>(<span class="code-self">self</span>):
-        <span class="code-keyword">print</span>(<span class="code-string">"Building efficient systems!"</span>)
-
-<span class="code-comment"># Always learning, always building</span>
-me = BackendDeveloper()
-me.say_hi()</code></pre>
-                            </div>
-                        </div>
+                <div class="about__grid">
+                    <div class="about__left reveal">
+                        <span class="section-label">About</span>
+                        <h2 class="about__heading">Building systems that solve real problems.</h2>
                     </div>
-
-                    <div class="about__info">
-                        <p class="about__text">I'm a passionate <strong>Backend Developer</strong> with expertise in
-                            building scalable web applications and data-driven solutions. My journey in software
-                            development has equipped me with deep knowledge in <strong>Python</strong>,
-                            <strong>FastAPI</strong>, and <strong>Django</strong>.
+                    <div class="about__right reveal">
+                        <p class="about__text">I'm a <strong>Backend Developer</strong> with expertise in building
+                            scalable web applications and data-driven solutions. My journey in software development has
+                            equipped me with deep knowledge in <strong>Python</strong>, <strong>FastAPI</strong>, and
+                            <strong>Django</strong>.
                         </p>
                         <p class="about__text">Beyond traditional backend development, I bring a unique blend of
                             <strong>Data Science</strong> skills. Working with NumPy, Pandas, and Scikit-learn allows me
@@ -149,43 +102,26 @@ me.say_hi()</code></pre>
                         </p>
                         <p class="about__text">My philosophy: <em>"Write code that tells a story."</em> I believe in
                             clean architecture and solutions that scale for tomorrow's challenges.</p>
-
-                        <div class="about__highlights">
-                            <div class="highlight-item"><i class="fas fa-code"></i><span>Clean Code Advocate</span>
-                            </div>
-                            <div class="highlight-item"><i class="fas fa-database"></i><span>Database
-                                    Optimization</span></div>
-                            <div class="highlight-item"><i class="fas fa-chart-line"></i><span>Data-Driven
-                                    Development</span></div>
-                            <div class="highlight-item"><i class="fas fa-cogs"></i><span>API Architecture</span></div>
+                        <div class="about__tags">
+                            <span class="about__tag">Clean Code</span>
+                            <span class="about__tag">API Architecture</span>
+                            <span class="about__tag">Database Optimization</span>
+                            <span class="about__tag">Data-Driven Development</span>
                         </div>
-                        <a href="assets/resume.pdf" class="btn btn--primary" download><i
-                                class="fas fa-download"></i>Download Resume</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section - Part 1 -->
+        <!-- Skills Section -->
         <section class="skills section" id="skills">
             <div class="container">
-                <div class="section__header"><span class="section__subtitle">What I work with</span>
-                    <h2 class="section__title">Technical Skills</h2>
+                <div class="skills__header reveal">
+                    <span class="section-label">Skills</span>
+                    <h2 class="section-heading">What I work with.</h2>
                 </div>
-
-                <div class="skills__tabs">
-                    <button class="skills__tab active" data-tab="languages"><i
-                            class="fas fa-code"></i>Languages</button>
-                    <button class="skills__tab" data-tab="frameworks"><i
-                            class="fas fa-layer-group"></i>Frameworks</button>
-                    <button class="skills__tab" data-tab="datascience"><i class="fas fa-chart-bar"></i>Data
-                        Science</button>
-                    <button class="skills__tab" data-tab="databases"><i class="fas fa-database"></i>Databases</button>
-                    <button class="skills__tab" data-tab="tools"><i class="fas fa-tools"></i>DevOps</button>
-                </div>
-
-                <div class="skills__content" id="skills-content">
-                    <!-- Content loaded dynamically or see next file -->
+                <div class="skills__grid reveal-stagger" id="skills-grid">
+                    <!-- Rendered by JS -->
                 </div>
             </div>
         </section>
@@ -193,16 +129,18 @@ me.say_hi()</code></pre>
         <!-- Projects Section -->
         <section class="projects section" id="projects">
             <div class="container">
-                <div class="section__header"><span class="section__subtitle">My recent work</span>
-                    <h2 class="section__title">Featured Projects</h2>
+                <div class="projects__header reveal">
+                    <div class="projects__header-left">
+                        <span class="section-label">Projects</span>
+                        <h2 class="projects__header-title">Featured Work</h2>
+                    </div>
                 </div>
-                <div class="projects__grid" id="projects-grid">
-                    <!-- Projects loaded dynamically -->
+                <div class="projects__list" id="projects-grid">
+                    <!-- Rendered by JS -->
                 </div>
-
-                <div class="projects__cta">
-                    <a href="https://github.com/hkcoder18" class="btn btn--outline" target="_blank"><i
-                            class="fab fa-github"></i>View All on GitHub</a>
+                <div class="projects__cta reveal">
+                    <a href="https://github.com/hkcoder18" class="btn btn--ghost" target="_blank"><i
+                            class="fab fa-github"></i> View All on GitHub</a>
                 </div>
             </div>
         </section>
@@ -210,11 +148,12 @@ me.say_hi()</code></pre>
         <!-- Experience Section -->
         <section class="experience section" id="experience">
             <div class="container">
-                <div class="section__header"><span class="section__subtitle">My journey</span>
-                    <h2 class="section__title">Work Experience</h2>
+                <div class="experience__header reveal">
+                    <span class="section-label">Experience</span>
+                    <h2 class="section-heading">Where I've worked.</h2>
                 </div>
-                <div class="experience__timeline" id="experience-timeline">
-                    <!-- Timeline loaded dynamically -->
+                <div class="experience__list" id="experience-timeline">
+                    <!-- Rendered by JS -->
                 </div>
             </div>
         </section>
@@ -222,51 +161,24 @@ me.say_hi()</code></pre>
         <!-- Contact Section -->
         <section class="contact section" id="contact">
             <div class="container">
-                <div class="section__header">
-                    <span class="section__subtitle">Get in touch</span>
-                    <h2 class="section__title">Let's Work Together</h2>
-                    <p class="section__description">Have a project in mind? I'd love to hear from you!</p>
-                </div>
-
-                <div class="contact__content">
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <div class="contact__card-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="contact__card-content">
-                                <h3>Email</h3><a href="mailto:harshkharabe007@gmail.com">harshkharabe007@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact__card">
-                            <div class="contact__card-icon"><i class="fab fa-linkedin-in"></i></div>
-                            <div class="contact__card-content">
-                                <h3>LinkedIn</h3><a href="https://www.linkedin.com/in/harshalkharabe/"
-                                    target="_blank">linkedin.com/in/harshalkharabe</a>
-                            </div>
-                        </div>
-                        <div class="contact__card">
-                            <div class="contact__card-icon"><i class="fab fa-github"></i></div>
-                            <div class="contact__card-content">
-                                <h3>GitHub</h3><a href="https://github.com/hkcoder18"
-                                    target="_blank">github.com/hkcoder18</a>
-                            </div>
-                        </div>
+                <div class="contact__content reveal">
+                    <h2 class="contact__heading">Let's Build<br><span class="accent">Something.</span></h2>
+                    <p class="contact__subtext">Have a project in mind or want to collaborate? I'm always open to
+                        discussing new opportunities and interesting ideas.</p>
+                    <div class="contact__links">
+                        <a href="mailto:harshkharabe007@gmail.com" class="contact__link">
+                            <i class="fas fa-envelope"></i> harshkharabe007@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/harshalkharabe/" class="contact__link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/hkcoder18" class="contact__link" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
-
-                    <form class="contact__form" id="contact-form">
-                        <div class="form__group"><label for="name" class="form__label">Name</label><input type="text"
-                                id="name" name="name" class="form__input" placeholder="Your name" required></div>
-                        <div class="form__group"><label for="email" class="form__label">Email</label><input type="email"
-                                id="email" name="email" class="form__input" placeholder="your.email@example.com"
-                                required></div>
-                        <div class="form__group"><label for="subject" class="form__label">Subject</label><input
-                                type="text" id="subject" name="subject" class="form__input"
-                                placeholder="Project inquiry" required></div>
-                        <div class="form__group"><label for="message" class="form__label">Message</label><textarea
-                                id="message" name="message" class="form__textarea"
-                                placeholder="Tell me about your project..." rows="5" required></textarea></div>
-                        <button type="submit" class="btn btn--primary btn--full"><i class="fas fa-paper-plane"></i>Send
-                            Message</button>
-                    </form>
+                    <div class="contact__list" id="contact-list">
+                        <!-- Rendered by JS -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -276,42 +188,15 @@ me.say_hi()</code></pre>
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <div class="footer__brand">
-                    <a href="#" class="footer__logo"><span class="logo-bracket">&lt;</span>HK<span
-                            class="logo-bracket">/&gt;</span></a>
-                    <p class="footer__tagline">Building robust backend solutions.</p>
-                    <div class="footer__social">
-                        <a href="https://github.com/hkcoder18" class="social__link" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/harshalkharabe/" class="social__link" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:harshkharabe007@gmail.com" class="social__link"><i
-                                class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="footer__links">
-                    <div class="footer__column">
-                        <h4 class="footer__title">Quick Links</h4>
-                        <ul class="footer__list">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__column">
-                        <h4 class="footer__title">Resources</h4>
-                        <ul class="footer__list">
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="assets/resume.pdf" download>Resume</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
                 <p class="footer__copyright">&copy; 2026 Harshal Kharabe. All rights reserved.</p>
-                <p class="footer__credit">Crafted with <span class="heart">❤</span> using HTML, CSS & JavaScript</p>
+                <div class="footer__social">
+                    <a href="https://github.com/hkcoder18" class="footer__social-link" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/harshalkharabe/" class="footer__social-link" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:harshkharabe007@gmail.com" class="footer__social-link"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </div>
     </footer>
